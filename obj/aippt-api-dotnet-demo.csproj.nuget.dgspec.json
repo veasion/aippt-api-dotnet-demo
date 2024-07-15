@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veasi\\Desktop\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj": {}
+    "D:\\veasion\\project\\metasign\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veasi\\Desktop\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj": {
+    "D:\\veasion\\project\\metasign\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veasi\\Desktop\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj",
+        "projectUniqueName": "D:\\veasion\\project\\metasign\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj",
         "projectName": "aippt-api-dotnet-demo",
-        "projectPath": "C:\\Users\\veasi\\Desktop\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj",
+        "projectPath": "D:\\veasion\\project\\metasign\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj",
         "packagesPath": "C:\\Users\\veasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veasi\\Desktop\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo\\obj\\",
+        "outputPath": "D:\\veasion\\project\\metasign\\aippt-api-dotnet-demo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\veasi\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,14 +11,14 @@ class Program
         // 开放平台 https://docmee.cn/open-platform/api
 
         // 填写你的API-KEY
-        string apiKey = "{{ YOUR API-KEY }}";
+        string apiKey = "YOUR API-KEY";
 
         // 第三方用户ID（数据隔离）
-        string userId = "test";
+        string uid = "test";
         string subject = "AI未来的发展";
 
-        // 创建 apiToken (有效期2小时，建议缓存到redis)
-        string? apiToken = await Api.CreateApiToken(apiKey, userId);
+        // 创建 api token (有效期2小时，建议缓存到redis，同一个 uid 创建时之前的 token 会在10秒内失效)
+        string? apiToken = await Api.CreateApiToken(apiKey, uid, null);
         Console.WriteLine("apiToken: " + apiToken);
         if (apiToken == null) return;
 

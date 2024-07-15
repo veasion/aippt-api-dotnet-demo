@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aoh7i65o1GU=",
+  "dgSpecHash": "FwlvjoEb+Hs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\veasi\\Desktop\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj",
+  "projectFilePath": "D:\\veasion\\project\\metasign\\aippt-api-dotnet-demo\\aippt-api-dotnet-demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\veasi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

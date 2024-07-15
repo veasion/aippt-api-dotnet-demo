@@ -9,14 +9,15 @@ using Newtonsoft.Json.Linq;
 public class Api
 {
 
-    public const string BASE_URL = "https://docmee.cn/api";
+    public const string BASE_URL = "https://docmee.cn";
 
-    public static async Task<string?> CreateApiToken(string apiKey, string userId)
+    public static async Task<string?> CreateApiToken(string apiKey, string uid, int? limit)
     {
-        string url = BASE_URL + "/user/createApiToken";
+        string url = BASE_URL + "/api/user/createApiToken";
         var body = JsonConvert.SerializeObject(new
         {
-            uid = userId
+            uid = uid,
+            limit = limit
         });
         var headers = new Dictionary<string, string>() {{
             "Api-Key", apiKey
@@ -36,7 +37,7 @@ public class Api
 
     public static async Task<string> GenerateOutline(string apiToken, string subject, string? prompt = null, string? dataUrl = null)
     {
-        string url = BASE_URL + "/ppt/generateOutline";
+        string url = BASE_URL + "/api/ppt/generateOutline";
         var body = JsonConvert.SerializeObject(new
         {
             subject,
@@ -62,7 +63,7 @@ public class Api
 
     public static async Task<string> GenerateContent(string apiToken, string outlineMarkdown, string? prompt = null, string? dataUrl = null)
     {
-        string url = BASE_URL + "/ppt/generateContent";
+        string url = BASE_URL + "/api/ppt/generateContent";
         var body = JsonConvert.SerializeObject(new
         {
             outlineMarkdown,
@@ -102,7 +103,7 @@ public class Api
 
     public static async Task<string?> RandomOneTemplateId(string apiToken)
     {
-        string url = BASE_URL + "/ppt/randomTemplates";
+        string url = BASE_URL + "/api/ppt/randomTemplates";
         var body = JsonConvert.SerializeObject(new
         {
             size = 1,
@@ -129,7 +130,7 @@ public class Api
 
     public static async Task<JToken?> GeneratePptx(string apiToken, string? templateId, string markdown, bool pptxProperty = false)
     {
-        string url = BASE_URL + "/ppt/generatePptx";
+        string url = BASE_URL + "/api/ppt/generatePptx";
         var body = JsonConvert.SerializeObject(new
         {
             templateId,
@@ -154,7 +155,7 @@ public class Api
 
     public static async Task<string?> DownloadPptx(string apiToken, string id)
     {
-        string url = BASE_URL + "/ppt/downloadPptx";
+        string url = BASE_URL + "/api/ppt/downloadPptx";
         var body = JsonConvert.SerializeObject(new
         {
             id
@@ -177,7 +178,7 @@ public class Api
 
     public static async Task<JToken?> DirectGeneratePptx(string apiToken, bool stream, string? templateId, string subject, string? prompt = null, string? dataUrl = null, bool pptxProperty = false)
     {
-        string url = BASE_URL + "/ppt/directGeneratePptx";
+        string url = BASE_URL + "/api/ppt/directGeneratePptx";
         var body = JsonConvert.SerializeObject(new
         {
             stream,
